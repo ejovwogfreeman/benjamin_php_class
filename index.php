@@ -390,14 +390,19 @@
 // echo addNums(3, 4);
 
 // function with default value
-function greet($name = 'Godbless')
-{
-    return 'Hello ' . $name;
-}
+// function greet($name = 'Godbless')
+// {
+//     return 'Hello ' . $name;
+// }
 
-echo greet('Freeman');
+// echo greet('Freeman');
 
 // next class => sting functions and array functions
+
+// assignment:
+
+// 1) write a function that converts money in dollar to naira (using 1 dollar to 1600 naira)
+// 2) write a function that converts temerature in kelvin to celcius
 ?>
 <!-- closing php tag -->
 
