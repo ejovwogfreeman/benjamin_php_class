@@ -37,7 +37,7 @@
 // 5) null - means empty
 
 // (reference data types - seen as a resource)
-// 6) array [simple, associative, multidimensional]
+// 6) array [indexed, associative, multidimensional]
 // 7) object (Classes/OOP)
 
 // indexed array
@@ -72,7 +72,7 @@
 
 // PHP divides the operators in the following groups:
 
-// Arithmetic operators (+, -, *, /)
+// Arithmetic operators (+, -, *, /, %, **)
 // Assignment operators (=, +=, -=, *=, /=)
 // Comparison operators (>, <, >=, <=, ==, !=)
 // Increment/Decrement operators (++, --)
@@ -220,16 +220,200 @@
 //         break;
 // }
 
-$color = 'blue';
-$colorVal = '#0000ff';
+// $color = 'blue';
+// $colorVal = '#0000ff';
 
-if ($color == 'blue') {
-    if ($colorVal == '#0000ff') {
-        echo 'color is blue and its value is #0000ff';
-    }
-} else {
-    echo 'not a match at all';
+// if ($color == 'blue') {
+//     if ($colorVal == '#0000ff') {
+//         echo 'color is blue and its value is #0000ff';
+//     }
+// } else {
+//     echo 'not a match at all';
+// }
+
+// $names = ['godbless', 'freeman', 'lancelot'];
+
+// $my_obj = [
+//     'name' => 'gb',
+//     'email' => 'gb@gmail.com',
+//     'isAdmin' => true
+// ];
+
+// $data = [
+//     [
+//         'amount' => 3000,
+//         'type' => 'income',
+//     ],
+//     [
+//         'amount' => 5000,
+//         'type' => 'expense',
+//     ],
+//     [
+//         'amount' => 8500,
+//         'type' => 'income',
+//     ],
+// ];
+
+// $income_array = [3000, 8500, 6000, 9000, 3500];
+// $expense_array = [5000, 4000, 5000];
+
+// $income = array_sum($income_array);
+// $expense = array_sum($expense_array);
+// $balance = $income - $expense;
+// echo 'income: $' . number_format($income) . ' expense: $' . number_format($expense) . '<br>';
+// echo "income: $income expense: $expense" . '<br>';
+// echo 'balance: $' . number_format($balance);
+
+// for loop
+// for ($i = 0; $i <= 20; $i++) {
+//     echo $i . '<br>';
+// }
+
+// $names = ['godbless', 'bishop', 'benjamin'];
+
+// for ($i = 0; $i < count($names); $i++) {
+//     echo $names[$i] . '<br>';
+// }
+
+// // while loop
+// $x = 1;
+
+// while ($x <= 20) {
+//     echo $x . '<br>';
+//     $x++;
+// }
+
+// $names = ['godbless', 'bishop', 'benjamin'];
+// $x = 0;
+// while ($x < count($names)) {
+//     echo $names[$x] . '<br>';
+//     $x++;
+// }
+
+
+// // do while loop
+// $x = 26;
+
+// do {
+//     echo $x;
+//     $x++;
+// } while ($x <= 20)
+
+
+// fraeach;
+// $names = ['godbless', 'bishop', 'benjain', 'john', 'maxwell'];
+
+// foreach ($names as $name) {
+//     echo $name . '<br>';
+// }
+
+// $data = [
+//     [
+//         'amount' => 3000,
+//         'type' => 'income',
+//     ],
+//     [
+//         'amount' => 5000,
+//         'type' => 'expense',
+//     ],
+//     [
+//         'amount' => 8500,
+//         'type' => 'income',
+//     ],
+// ];
+
+// foreach ($data as $transaction) {
+//     echo '<div style="background: black; color: white; paddiing: 10px">' . $transaction['amount'] . ' - ' . $transaction['type'] . '</div>';
+// }
+
+// break and continue
+
+// // break - jups out of a loop
+// for ($i = 1; $i <= 10; $i++) {
+//     if ($i == 7) {
+//         break;
+//     }
+//     echo $i . '<br>';
+// }
+
+// // continue - jups a particular value and continue with the loop
+// for ($i = 1; $i <= 10; $i++) {
+//     if ($i == 7) {
+//         continue;
+//     }
+//     echo $i . '<br>';
+// }
+
+// functions - are block of codes designed to perform a particular task
+
+// // syntax - without parameter/argument
+// function functionName(){
+//     codeblock;
+// }
+
+// // syntax - with parameter/argument
+// function functionName(param1, param2, param3...etc){
+//     codeblock;
+// }
+
+// function greet()
+// {
+//     echo 'Hello world';
+// }
+
+// greet();
+
+// function greet($name)
+// {
+//     echo 'Hello ' . $name . '<br>';
+// };
+
+// greet('Godbless');
+// greet('Benjamin');
+// greet('Bishop');
+
+// function addNums($a, $b)
+// {
+//     echo $a + $b;
+// }
+
+// addNums(3, 4);
+
+// functions are supposed to use a return statement:
+// the return statement stores the returned value in memory of the funcction
+
+// function addNums($a, $b)
+// {
+//     return $a + $b;
+// }
+
+// echo addNums(3, 4);
+
+// function with default value
+function greet($name = 'Godbless')
+{
+    return 'Hello ' . $name;
 }
 
+echo greet('Freeman');
+
+// next class => sting functions and array functions
 ?>
 <!-- closing php tag -->
+
+
+<!-- <?php foreach ($data as $transaction): ?>
+    <div class="transaction">
+        <h2><?php echo $transaction['amount'] ?></h2>
+        <span><?php echo $transaction['type'] ?></span>
+    </div>
+<?php endforeach; ?> -->
+
+<!-- <style>
+    .transaction {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        margin-bottom: 3px
+    }
+</style> -->
