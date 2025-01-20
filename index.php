@@ -422,3 +422,137 @@
         margin-bottom: 3px
     }
 </style> -->
+
+<?php
+
+// php string functions
+// 1) strlen()
+// 2) str_word_count()
+// 3) strpos()
+// 4) trim()
+// 5) ltrim()
+// 6) rtrim()
+// 7) stubstr();
+// 8) str_replace()
+// 9) strtoupper()
+// 10) strtolower();
+// 11) ucfirst()
+// 12) ucwords()
+// 13) explode();
+
+
+$name = 'godbless';
+
+$sentence = 'Hello my name is godbless';
+
+// echo strlen($name);
+// echo str_word_count($sentence);
+
+// echo strpos($sentence, 'l');
+
+$mystr = ' Bishop is a funny man   ';
+
+// echo strlen($mystr);
+
+// echo '<br>';
+
+// echo strlen(trim($mystr));
+
+// echo strlen(ltrim($mystr));
+
+// echo '<br>';
+
+// echo strlen(rtrim($mystr));
+
+// echo substr($name, 4, 4)
+
+// echo str_replace('god', 'jesus', $name);
+
+// echo strtoupper($name);
+// echo strtolower($name);
+// echo ucfirst($name);
+// echo ucwords($sentence);
+
+// print_r(explode(' ', $sentence));
+
+// array functions
+// 1) array()
+// 2) count()
+// 4) array_merge()
+// 3) array_push()
+// 5) array_pop()
+// 6) array_shift()
+// 7) array_unshift()
+// 8) sort()
+// 9) rsort()
+// 10) in_array()
+// 11) array_search()
+// 12) array_key_exists()
+// 13) sizeof()
+// 14) array_keys()
+// 15) array_values()
+// 16) array_sum
+
+// $myarr = array('godbless', 'benjamin', 'bishop');
+// $myarr = ['godbless', 'benjamin', 'bishop'];
+
+// $array2 = ['maxwell', 'collins'];
+
+// print_r($myarr);
+
+// echo count($myarr);
+
+// print_r(array_merge($myarr, $array2));
+
+// array_push($myarr, 20, 'maxwell', 'collins', '23', 'Boyles', 88, 'Zanku');
+
+// array_pop($myarr);
+// array_pop($myarr);
+// array_pop($myarr);
+
+// array_unshift($myarr, 'freeman', 'GB');
+
+// array_shift($myarr);
+// array_shift($myarr);
+// array_shift($myarr);
+
+// sort($myarr);
+
+// print_r($myarr);
+
+// $scores = [20, 30, 2, 15, 7, 1, 17];
+// sort($scores);
+// rsort($scores);
+// print_r($scores);
+
+$names = ['gb', 'fm', 'ben', 'bis', 'lc'];
+
+$person = [
+    'name' => 'godbess',
+    'school' => 'codefest',
+    'isadmin' => true
+];
+
+// returns true if found and flaser if not found
+// var_dump(in_array('maxwerll', $names));
+
+// returns the index if found and false if not found
+// var_dump(array_search('ben', $names));
+
+// returns true if found and flaser if not found
+// nb=> for indexed arrays, the index represents the keys
+// var_dump(array_key_exists(0, $person))
+
+
+// count() and size() returns the total of elements in the array
+// echo sizeof($names);
+
+// print_r(array_keys($person))
+// print_r(array_values($person))
+
+
+$scores = [20, 30, 2];
+
+echo array_sum($scores);
+
+?>
